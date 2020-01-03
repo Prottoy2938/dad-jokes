@@ -21,6 +21,7 @@ export default class DadJokes extends Component {
 
   getJokes() {
     console.log("Jokes API from https://icanhazdadjoke.com");
+    console.log("Icons from Icons8");
 
     for (
       let i = this.state.requestedJoke;
