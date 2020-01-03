@@ -1,0 +1,24 @@
+h1 {
+  color: #444;
+  font: 800 350%/1.4 sans-serif;
+  text-transform: uppercase;
+}
+
+h1::selection {
+  -webkit-text-stroke: 4px #fb8a05;
+  color: transparent;
+}
+.container {
+  justify-content: center;
+}
+.btn-warning {
+  margin-top: 14px;
+  border-radius: none;
+  margin-bottom: 100px;
+}
+ol {
+  /* Name counter and set it to zero */
+  counter-reset: list;
+
+  list-style: none;
+}

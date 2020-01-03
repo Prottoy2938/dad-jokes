@@ -1,0 +1,89 @@
+.text-left {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  float: left;
+  margin-top: 3vh;
+  cursor: pointer;
+  font-size: 18px;
+  color: #cf4545;
+}
+.text-center {
+  margin-top: 2.3vh;
+  margin-left: 30px;
+  font-size: 2.3vh;
+}
+.text-right {
+  margin-left: 5vh;
+  margin-top: 2.3vh;
+  font-size: 18px;
+  cursor: pointer;
+  color: #00d7b9;
+}
+
+.JokeContainer {
+  /*outline: 1px solid red;*/
+  border: 2px solid transparent;
+  text-align: center;
+  display: flex;
+}
+
+.demo {
+  /*background-image:
+      linear-gradient(white, white),
+      linear-gradient(180deg, cornflowerblue, purple);*/
+
+  background-image: linear-gradient(white, white),
+    linear-gradient(270deg, #00d7b9, #b95dd7 50%, #ffb367 100%);
+
+  background-repeat: no-repeat;
+  background-origin: padding-box, border-box;
+}
+.collection {
+  /* these styles are optional here, you might not need/want them */
+  margin-top: -1px;
+  margin-left: -1px;
+  width: auto;
+}
+li {
+  /* Increment counter with every li */
+  counter-increment: list;
+
+  margin-bottom: 10px;
+}
+
+li::before {
+  /* Use ::before pseudoelement to show a custom counter with a leading zero */
+  content: counter(list, decimal-leading-zero);
+
+  background: #2b4353;
+
+  font-family: Arial, sans-serif;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+
+  border-radius: 50%;
+  width: 2.2em;
+  height: 2.2em;
+  line-height: 2.3em;
+  display: inline-block;
+  margin-right: 1em;
+}
+.emoji {
+  margin-top: 1.7vh;
+  margin-left: 3px;
+  font-size: 25px;
+  margin-bottom: 1.7vh;
+}
+.vote {
+  font-size: 1.2vh;
+  margin-top: 6vh;
+  color: #319ce4;
+}
+.downvote {
+  color: #941212;
+}
+.upvote {
+  color: #00d7b9;
+}
